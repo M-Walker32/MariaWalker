@@ -13,21 +13,39 @@ body {
   color: #272829;
 }
 
-.color {
-  background-color: #0563bb;
-  width: 100vw;
-  height: 25vh;
-  /* position: relative; */
+/* Large screen */
+@media screen and (min-width: 768px) {
+  .color {
+    background-color: #0563bb;
+    width: 100vw;
+    height: 35vh;
+    /* position: relative; */
+  }
+}
+
+/* small screens */
+@media screen and (max-width: 768px) {
+  .color {
+    background-color: #0563bb;
+    width: 100vw;
+    height: 50vh;
+  }
 }
 
 .app-title {
   position: absolute;
   color: white;
-  top: 3em;
-  left: 2.75em;
-  padding: 2em;
-  border: 2px solid white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 
 a {
   color: #0563bb;
